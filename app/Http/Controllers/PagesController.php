@@ -16,4 +16,9 @@ class PagesController extends Controller
         return view('pages.layout-static');
     }
 
+    public function main()
+    {
+        return view('pages.main');
+    }
+
 }
