@@ -68,9 +68,13 @@ class MainPagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required|string',
+            'sub_title' => 'required|string'
+        ]);
+        return 'Update Check';
     }
 
     /**
