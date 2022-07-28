@@ -57,7 +57,7 @@ class ServicePagesController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('pages.services.list');
     }
 
     /**
