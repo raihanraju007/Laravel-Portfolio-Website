@@ -29,7 +29,8 @@ Route::get('/admin/main', [MainPagesController::class, 'index'])->name('admin.ma
 Route::put('/admin/main', [MainPagesController::class, 'update'])->name('admin.main.update');
 Route::get('/admin/services/create', [ServicePagesController::class, 'create'])->name('admin.services.create');
 Route::post('/admin/services/create', [ServicePagesController::class, 'store'])->name('admin.services.store');
-Route::get('/admin/services/show', [ServicePagesController::class, 'show'])->name('admin.services.show');
+//Route::get('/admin/services/show', [ServicePagesController::class, 'show'])->name('admin.services.show');
+Route::get('/admin/services/list', [ServicePagesController::class, 'list'])->name('admin.services.list');
 
 Auth::routes();
 

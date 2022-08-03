@@ -57,7 +57,12 @@ class ServicePagesController extends Controller
      */
     public function show($id)
     {
-        return view('pages.services.list');
+//        return view('pages.services.list');
+    }
+    public function list()
+    {
+        $services = Service::all();
+        return view('pages.services.list',compact('services'));
     }
 
     /**
